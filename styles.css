@@ -4,24 +4,26 @@
 }
 
 body{
-    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
-    font-family: 'Nunito sans', sans-serif;
-    background: #f6f9fe;
-    color: #353252;
+    @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+    font-family: 'Nunito', sans-serif;
+    margin: 0 10%;
+    
 }
 
 .container{
     display: flex;
     flex-direction: column;    
-    margin: 0 10%;
+    padding: 0 10%;
     height: 100vh;
+    background: #f6f9fe;
+    border-radius: 10px;
 }
 
 header{
     display: flex;    
     justify-content: space-between;
     align-items: center;    
-    height: 100px;
+    height: 120px;
 }
 
 .nav-bar ul{
@@ -54,28 +56,66 @@ header{
 
 main{
     display: flex;
-    justify-content: center;   
-    flex: 1;
+    flex: 1; 
+    justify-content: space-between;
+    align-items: stretch;
+    margin: 40px 0;  
+}
+
+.content{
+   margin-right: 20px;
+}
+
+.content-img{
+   
 }
 
 .content h1, h5, form{
     margin-top: 10px;    
 }
 
-
 .content h5{
     display: inline-block;
-    padding: 5px 15px;
+    padding: 8px 20px;
     background-color: #372865;
     color: #fff;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
-.form-email, .form-button{
-    padding: 10px 20px;
+.content h1{
+    font-size: 3em;
+    
 }
 
-main img{
-    width: 200px;
-    height: 200px;
+.content p{
+    font-size: 1.5rem;
+}
+
+.form-email{
+    padding: 20px 100px 20px 15px;
+    border: 2px;    
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 1em;
+}
+
+.form-button{
+    background: #372865;
+    color: #fff;
+    padding: 20px;
+    border-style: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+main img{    
+   width: 400px;
+}
+
+@media (max-width: 1400px)
+{
+    .content-img{
+        display: none;
+    }
 }
