@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    padding: 0;       
+    padding: 0;           
 }
 
 body{
@@ -12,9 +12,9 @@ body{
 
 .container{
     display: flex;
-    flex-direction: column;
-    flex: 1;
+    flex-direction: column;    
     margin: 0 10%;
+    height: 100vh;
 }
 
 header{
@@ -55,7 +55,7 @@ header{
 main{
     display: flex;
     justify-content: center;   
-    
+    flex: 1;
 }
 
 .content h1, h5, form{
