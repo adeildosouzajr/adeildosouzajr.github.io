@@ -35,7 +35,9 @@ header{
     color: #353252;         
 }
 
-a:link, a:visited, a:active{
+.nav-bar ul a:link, 
+.nav-bar ul a:visited, 
+.nav-bar ul a:active{
     text-decoration: none;
 }
 
@@ -48,4 +50,32 @@ a:link, a:visited, a:active{
 #join-wait{
     background: #353252;
     color:#f6f9fe;
+}
+
+main{
+    display: flex;
+    justify-content: center;   
+    
+}
+
+.content h1, h5, form{
+    margin-top: 10px;    
+}
+
+
+.content h5{
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #372865;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.form-email, .form-button{
+    padding: 10px 20px;
+}
+
+main img{
+    width: 200px;
+    height: 200px;
 }
