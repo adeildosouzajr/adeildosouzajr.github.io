@@ -63,11 +63,12 @@ main{
 }
 
 .content{
+   flex: 2; 
    margin-right: 20px;
 }
 
 .content-img{
-   
+   flex: 1;
 }
 
 .content h1, h5, form{
@@ -83,14 +84,18 @@ main{
 }
 
 .content h1{
-    font-size: 3em;
+    @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap');
+    font-family: 'Nunito', sans-serif;
     
 }
 
 .content p{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }
 
+form{
+    display: flex;
+}
 .form-email{
     padding: 20px 100px 20px 15px;
     border: 2px;    
@@ -109,11 +114,16 @@ main{
     font-size: 1em;
 }
 
-main img{    
-   width: 400px;
+.content-img img{    
+   width: 100%;
+   height: 100%;
 }
 
-@media (max-width: 1400px)
+footer{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1080px)
 {
     .content-img{
         display: none;
