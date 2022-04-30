@@ -101,6 +101,7 @@ main{
 form{
     display: flex;
 }
+
 .form-email{
     padding: 20px 100px 20px 15px;
     border: 2px;    
